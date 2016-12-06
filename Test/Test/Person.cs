@@ -8,8 +8,13 @@ namespace Test
 {
   public class Person
   {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Address { get; set; }
+    public string FirstName { get; private set; }
+    public string LastName { get; private set; }
+
+    public Person(string firstName, string lastName)
+    {
+      FirstName = firstName;
+      LastName = lastName;
+    }
   }
 }

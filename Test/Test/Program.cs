@@ -11,6 +11,11 @@ namespace Test
     static void Main(string[] args)
     {
       Console.WriteLine("I'm a test!");
+
+      var pm = new PersonManager();
+      pm.AddPerson(new Person("John", "Doe"));
+      pm.AddPerson(new Person("Jane", "Doe"));
+      pm.ListPeople();
     }
   }
 }
